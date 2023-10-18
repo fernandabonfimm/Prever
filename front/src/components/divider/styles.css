@@ -1,0 +1,5 @@
+.divider {
+  height: 2px; /* Altura da linha horizontal */
+  background-color: #ac8d3f; /* Cor dourada */
+  width: 100%;
+}

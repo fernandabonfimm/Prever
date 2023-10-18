@@ -1,0 +1,128 @@
+.divHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  gap: 10px;
+  padding: 3em;
+}
+.logoPreverHeader {
+  width: 70px;
+  height: 60px;
+  margin-left: 20px;
+}
+
+.btnSocialMediaHeader {
+  background-color: #223454;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.btnSocialMediaHeader:hover {
+  background-color: #fff;
+  color: #223454;
+  border: 2px solid #223454;
+}
+
+.btnUserHeader {
+  background-color: #223454;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  border-radius: 100%;
+}
+
+.btnUserHeader:hover {
+  background-color: #fff;
+  color: #223454;
+  border: 2px solid #223454;
+}
+.divButtonsHeader {
+  display: flex;
+  gap: 10px;
+}
+
+.divMenuHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 4em;
+  background-color: #223454;
+}
+
+.btnPhoneHeader {
+  background-color: #bfd6ff;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  gap:5px
+}
+
+.btnPhoneHeader:hover {
+  background-color: #fff;
+  color: #223454;
+}
+
+.iconPhone {
+  font-size: 20px;
+  color: #b73030;
+}
+
+.title24h{
+  font-size: 20px;
+  color: #223454;
+  font-weight: 800;
+}
+.btnMenuHeader{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+}
+.btnMenuHeader:hover{
+  color: #bfd6ff;
+  background-color: transparent;
+  border: none;
+}
+
+.menuHeader{
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  padding: 1em;
+}
+
+.itemsMenuHeader{
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #949494;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.itemsMenuHeader:hover{
+  color: #223454;
+  font-weight: 700;
+  background-color: #f7f7f7;
+}
