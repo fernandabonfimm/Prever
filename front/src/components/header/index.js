@@ -55,49 +55,56 @@ export default function Header() {
 
   return (
     <>
-      <Header className="divHeader">
-        <img src={Logo} alt="Logo" className="logoPreverHeader" />
-        <div className="divButtonsHeader">
-          <button className="btnSocialMediaHeader">
-            <AiFillInstagram />
+      <div className="headerMobile">
+        <Header className="divHeader">
+          <img src={Logo} alt="Logo" className="logoPreverHeader" />
+        </Header>
+      </div>
+      <div className="headerDesktop">
+        <Header className="divHeader">
+          <img src={Logo} alt="Logo" className="logoPreverHeader" />
+          <div className="divButtonsHeader">
+            <button className="btnSocialMediaHeader">
+              <AiFillInstagram />
+            </button>
+            <button className="btnSocialMediaHeader">
+              <AiFillYoutube />
+            </button>
+            <button className="btnSocialMediaHeader">
+              <AiFillFacebook />
+            </button>
+            <button className="btnUserHeader">
+              <FaUserAlt />
+            </button>
+          </div>
+        </Header>
+        <Header className="divMenuHeader">
+          <Button className="btnMenuHeader">Ínicio</Button>
+          <Button className="btnMenuHeader">ASSISTÊNCIA FAMILIAR</Button>
+          <Dropdown overlay={menuCities} placement="bottomCenter">
+            <Button className="btnMenuHeader">
+              Unidades
+              <MdKeyboardArrowDown />
+            </Button>
+          </Dropdown>
+          <Dropdown overlay={menuBenefits} placement="bottomCenter">
+            <Button className="btnMenuHeader">
+              BENEFÍCIOS <MdKeyboardArrowDown />
+            </Button>
+          </Dropdown>
+          <Dropdown overlay={menuStructure} placement="bottomCenter">
+            <Button className="btnMenuHeader">
+              ESTRUTURAS
+              <MdKeyboardArrowDown />
+            </Button>
+          </Dropdown>
+          <Button className="btnMenuHeader">FALE CONOSCO</Button>
+          <button className="btnPhoneHeader">
+            <BsFillTelephoneFill className="iconPhone" />
+            <span className="title24h">24h</span>
           </button>
-          <button className="btnSocialMediaHeader">
-            <AiFillYoutube />
-          </button>
-          <button className="btnSocialMediaHeader">
-            <AiFillFacebook />
-          </button>
-          <button className="btnUserHeader">
-            <FaUserAlt />
-          </button>
-        </div>
-      </Header>
-      <Header className="divMenuHeader">
-        <Button className="btnMenuHeader">Ínicio</Button>
-        <Button className="btnMenuHeader">ASSISTÊNCIA FAMILIAR</Button>
-        <Dropdown overlay={menuCities} placement="bottomCenter">
-          <Button className="btnMenuHeader">
-            Unidades
-            <MdKeyboardArrowDown />
-          </Button>
-        </Dropdown>
-        <Dropdown overlay={menuBenefits} placement="bottomCenter">
-          <Button className="btnMenuHeader">
-            BENEFÍCIOS <MdKeyboardArrowDown />
-          </Button>
-        </Dropdown>
-        <Dropdown overlay={menuStructure} placement="bottomCenter">
-          <Button className="btnMenuHeader">
-            ESTRUTURAS
-            <MdKeyboardArrowDown />
-          </Button>
-        </Dropdown>
-        <Button className="btnMenuHeader">FALE CONOSCO</Button>
-        <button className="btnPhoneHeader">
-          <BsFillTelephoneFill className="iconPhone" />
-          <span className="title24h">24h</span>
-        </button>
-      </Header>
+        </Header>
+      </div>
     </>
   );
 }

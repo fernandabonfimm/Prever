@@ -126,3 +126,22 @@
   font-weight: 700;
   background-color: #f7f7f7;
 }
+
+.headerMobile{
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  .headerMobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    gap: 10px;
+    padding: 3em;
+  }
+
+  .headerDesktop{
+    display: none;
+  }
+}

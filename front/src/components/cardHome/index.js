@@ -8,9 +8,11 @@ export default function CardHome({ title, description, image, onClick }) {
     <Card className="cardHome">
       <h1>{title}</h1>
       <Divider />
-      {image}
+      <div className="divImgCardHome">{image}</div>
       <span>{description}</span>
-      <Button onClick={onClick}>saiba mais</Button>
+      <div className="divBtnCardHome">
+        <Button onClick={onClick}>saiba mais</Button>
+      </div>
     </Card>
   );
 }
