@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Button, Dropdown, Space, Menu } from "antd";
+import { Layout, Button, Dropdown, SubMenu, Menu } from "antd";
 import Logo from "../../assets/img/logoprever.png";
 import { AiFillInstagram, AiFillYoutube, AiFillFacebook } from "react-icons/ai";
 import { FaUserAlt } from "react-icons/fa";
@@ -53,11 +53,26 @@ export default function Header() {
     </Menu>
   );
 
+  const [collapsed, setCollapsed] = React.useState(false);
+
+  const toggleMenu = () => {
+    setCollapsed(!collapsed);
+  };
+
   return (
     <>
       <div className="headerMobile">
         <Header className="divHeader">
           <img src={Logo} alt="Logo" className="logoPreverHeader" />
+          <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
+            <Menu.Item key="1">Home</Menu.Item>
+            <Menu.Item key="2">Products</Menu.Item>
+            <Menu.SubMenu key="sub1" title="User">
+              <Menu.Item key="3">Profile</Menu.Item>
+              <Menu.Item key="4">Dashboard</Menu.Item>
+            </Menu.SubMenu>
+            <Menu.Item key="5">Settings</Menu.Item>
+          </Menu>
         </Header>
       </div>
       <div className="headerDesktop">
